@@ -6,12 +6,12 @@
     <title>Lista Times</title>
 </head>
 <body>    
-     <h1>Mostrando uma variável</h1>
-     {{times}}
+     
 
      <h1>Mostrando com um for</h1>
      {% for time in times %} 
-         <h6>{{time}}</h6>
+         <h6>{{time.nome}}</h6>
+         <h6>{{time.vitorias}}</h6>
      {% endfor %}
 
 
@@ -19,14 +19,16 @@
      <table border="3">
         <thead>
             <tr>
-                <th>Times</th>
+                <th>nome</th>
+                <th>vitórias</th>
             </tr>
         </thead>
         <tbody>
             
             {% for time in times %} 
                <tr>
-                 <td>{{time}}</td>
+                 <td>{{time.nome}}</td>
+                 <td>{{time.vitorias}}</td>
                </tr>
             {% endfor %}
         </tbody>
