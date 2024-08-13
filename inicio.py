@@ -27,6 +27,6 @@ def calcular():
     resposta = mat.somar()
     return render_template('calculo.html',resultado=resposta)
 
-app.run()
+app.run(debug=True)
 
 

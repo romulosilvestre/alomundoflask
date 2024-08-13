@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
     <title>Lista Times</title>
 </head>
 <body>    
      
 
-     <h1>Mostrando com um for</h1>
+     <h2>Mostrando com um for</h2>
      {% for time in times %} 
          <h6>{{time.nome}}</h6>
          <h6>{{time.vitorias}}</h6>
